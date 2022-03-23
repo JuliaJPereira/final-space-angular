@@ -1,3 +1,3 @@
 # Final Space - Angular
 
-Para acessar o projeto, [clique aqui](https://final-space-angular.netlify.app/character).
+Para acessar o projeto, [clique aqui](https://final-space-angular.netlify.app).
