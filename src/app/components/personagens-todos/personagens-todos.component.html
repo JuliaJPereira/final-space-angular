@@ -1,0 +1,16 @@
+<div class="container">
+  <img class="logo-final-space" src="../../../assets/logo.png" alt="logo-final-space">
+
+<div class="row">
+  <div *ngFor="let personagem of listPersonagem$ | async" class="col-md-3 space-top">
+    <div class="card">
+      <img src="{{personagem.img_url}}" class="card-img-top" alt="personagem.name">
+      <div class="card-body">
+        <h5 class="card-title">{{personagem.name}}</h5>
+        <a routerLink="/character/{{personagem.id}}" class="btn btn-primary">Detalhes</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

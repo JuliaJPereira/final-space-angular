@@ -1,0 +1,38 @@
+<div class="container">
+  <img
+    class="rounded-circle"
+    src="{{ personagemObj.img_url }}"
+    alt="img_personagem"
+  />
+  <h1>{{ personagemObj.name }}</h1>
+
+  <div class="alias">
+    <h2>Alias</h2>
+    <div>
+      <span
+        class="badge bg-primary badge-margin"
+        *ngFor="let item of personagemObj.alias"
+        >{{ item }}</span
+      >
+    </div>
+  </div>
+
+  <div class="abilities">
+    <h2>Abilities</h2>
+    <div>
+      <span
+        class="badge bg-success badge-margin"
+        *ngFor="let item of personagemObj.abilities"
+        >{{ item }}</span
+      >
+    </div>
+  </div>
+
+  <ul class="list-group">
+    <li class="list-group-item">Status: {{ personagemObj.status }}</li>
+    <li class="list-group-item">Species: {{ personagemObj.species }}</li>
+    <li class="list-group-item">Gender: {{ personagemObj.gender }}</li>
+    <li class="list-group-item">Hair: {{ personagemObj.hair }}</li>
+    <li class="list-group-item">Origin: {{ personagemObj.origin }}</li>
+  </ul>
+</div>
